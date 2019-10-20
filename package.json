@@ -1,0 +1,19 @@
+{
+  "name": "hw5",
+  "version": "1.0.0",
+  "description": "Homework 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eminmirzoev/hw5.git"
+  },
+  "author": "eminmirzoev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eminmirzoev/hw5/issues"
+  },
+  "homepage": "https://github.com/eminmirzoev/hw5#readme"
+}
