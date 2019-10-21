@@ -293,7 +293,7 @@ describe('ArrayList.splice()', () => {
      });
 
 describe('sort(function(first, seconod)', () => {
-     it('should sorts the array in place', () => {
+     it('should sorts', () => {
           const list = new ArrayList();
           const value = [2, 1, 5, 3];
           const expected = [1, 2, 3, 5];
