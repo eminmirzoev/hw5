@@ -40,6 +40,8 @@ describe('ArrayList.clear()', () => {
           const value = [1];
           const expectedString = '[]';
           const expectedSize = 1;
+          
+          //When
           const actual = list.toString();
 
           list.init(value);
@@ -54,10 +56,12 @@ describe('ArrayList.clear()', () => {
           const value = [1, 2];
           const expectedSize = 2;
           const expectedString = '[]';
+
+          //When
           const actual = list.toString();
 
           list.init(value);
-
+          //Then
           assert.deepEqual(list.getSize(), expectedSize);
           assert.deepEqual(actual, expectedString);
          })
@@ -93,6 +97,8 @@ describe('ArrayList.init()', () => {
           const value = [1];
           const expectedString = '[]';
           const expectedSize = 1;
+
+          //When
           const actual = list.toString();
 
           list.init(value);
@@ -107,6 +113,8 @@ describe('ArrayList.init()', () => {
           const value = [1, 2];
           const expectedSize = 2;
           const expectedString = '[]';
+
+          //When
           const actual = list.toString();
 
           list.init(value);
@@ -121,6 +129,8 @@ describe('ArrayList.init()', () => {
           const value = [1, 2, 3, 4];
           const expectedSize = 4;
           const expectedString = '[]';
+
+          //When
           const actual = list.toString();
 
           list.init(value);
@@ -192,6 +202,7 @@ describe('ArrayList.pop()', () => {
           const last = value.length - 1;
           const expected = last;
 
+          //When
           const actual = list.pop(value);
           
           //Then
@@ -234,6 +245,7 @@ describe('ArrayList.shift()', () => {
           const first = value[0];
           const expected = first;
 
+          //When
           const actual = list.shift(value);
           
           //Then
@@ -247,8 +259,10 @@ describe('ArrayList.slice()', () => {
           const value = [1, 2, 3, 4, 5];
           const expectedSlice = [1, 2];
 
+          //When
           const actual = list.getSlice(value);
-          //Tjen
+
+          //Then
           assert.deepEqual(actual, expectedSlice);
       })
      });
@@ -258,6 +272,7 @@ describe('ArrayList.splice()', () => {
           const list = new ArrayList();
           const value = [1, 2, 3, 4, 5];
 
+          //When
           const actual = list.getSplice(value);
 
           //Then
@@ -269,8 +284,10 @@ describe('ArrayList.splice()', () => {
           const value = [1, 2];
           const expectedSlice = [empty, empty];
 
+          //When
           const actual = list.getSplice(value);
 
+          //Then
           assert.deepEqual(actual, expectedSlice);
       })
      });
