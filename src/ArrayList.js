@@ -29,7 +29,7 @@ ArrayList.prototype.getSize = () => {
     return this._size;
 };
 
-ArrayList.prototype.getString = () => {
+ArrayList.prototype.toString = () => {
     let result = '';
 
     result += '[';
@@ -117,3 +117,4 @@ ArrayList.prototype.getSort = function(value) {
     }
     return this._array;
 };
+module.exports = ArrayList; 
