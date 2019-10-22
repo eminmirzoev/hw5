@@ -3,7 +3,6 @@ function IList() {}
 IList.prototype.clear = function() {console.log('IList clear'); }
 IList.prototype.toString = function() {console.log('IList toString'); }
 IList.prototype.getSize = function() {console.log('IList getSize'); }
-IList.prototype.init = function () {console.log('Ilist init'); }
 IList.prototype.getSort = function() {console.log('IList getSort'); }
 IList.prototype.push = function() {console.log('IList push'); }
 IList.prototype.pop = function() {console.log('IList pop'); }
